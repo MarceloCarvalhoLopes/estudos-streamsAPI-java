@@ -97,6 +97,11 @@ public class Produto {
         return getQuantidade() > 0;
     }
 
+    public BigDecimal getValorEstoque() {
+        return getPreco().multiply(new BigDecimal(getQuantidade()));
+    }
+
+
     @Override
     public int hashCode() {
         final int prime = 31;
