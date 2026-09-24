@@ -17,7 +17,7 @@ public class MainFlatMap {
                 .forEach(System.out::println);
 
         System.out.println("-------------------------------");
-        
+
         Set<Categoria> categorias = new HashSet<>();
         for (Produto produto : produtos) {
             if(produto.temEstoque()){
